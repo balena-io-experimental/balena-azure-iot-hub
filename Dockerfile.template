@@ -1,0 +1,8 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-build
+
+RUN pip3 install adafruit-circuitpython-bme680
+RUN pip3 install azure-iot-device
+
+COPY device.py /usr/src/app/device.py
+
+CMD ["python3","/usr/src/app/device.py"]
