@@ -1,5 +1,6 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-build
 
+RUN pip3 install RPi.GPIO
 RUN pip3 install adafruit-circuitpython-bme680
 RUN pip3 install azure-iot-device
 
