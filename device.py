@@ -77,7 +77,7 @@ def iothub_client_telemetry_sample_run():
         print ( "IoTHubClient sample stopped" )
 
 if __name__ == '__main__':
-    print ( "IoT Hub Quickstart #1 - Simulated device" )
-    print ( "Press Ctrl-C to exit" )
+    print ( "IoT Hub balenaOS device..." )
+    print ( "Starting to send data." )
     iothub_client_telemetry_sample_run()
 
