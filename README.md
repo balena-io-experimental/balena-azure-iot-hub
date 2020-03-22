@@ -1,8 +1,8 @@
 # Azure IoT Hub integration with balena
 
-Azure IoT Hub is a managed service that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can read more about it [here](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub). Here we present a simple example of integrating IoT hub with the [balena platform](https://www.balena.io/what-is-balena/).
+Azure IoT Hub is a managed service that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can read more about it [here](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub). To integrate IoT Hub with the [balena platform](https://www.balena.io/what-is-balena/), follow the steps below.
 
-##1. Create and configure an Azure IoT Hub##
+## 1. Create and configure an Azure IoT Hub
 
 **Before you begin**
 Before you begin, you will need to create an Azure account. You can set up a free trial or pay as you go account [here](https://azure.microsoft.com/en-us/free/).
@@ -15,7 +15,7 @@ There are many options for setting up an Azure IoT Hub, especially when it comes
 
 * After the device is created, open the device in the Azure Portal from the list in the IoT devices pane. Copy the Primary Connection String for use in a subsequent step below.
 
-##2. Create a balenaCloud application
+## 2. Create a balenaCloud application
 If this is your first time using balena, we recommend going through the [getting started tutorial](https://www.balena.io/docs/learn/getting-started/raspberrypi3/nodejs/).
 
 You'll need to:
@@ -26,7 +26,7 @@ You'll need to:
 * Flash the downloaded OS to your SD card with [balenaEtcher](https://www.balena.io/etcher/)
 * Power up the device and check it's online in the dashboard
 
-##3. Provision your device
+## 3. Provision your device
 
 Clone this repository to use as your application code. make sure you have installed the [balena CLI](https://github.com/balena-io/balena-cli)
 
@@ -38,7 +38,7 @@ balena push <appName>
 
 Where <appName> is the name you gave your balenaCloud application in the previous step.
 
-##4. Configure environment variables 
+## 4. Configure environment variables 
 
 Once the app gets deployed to your device, you'll see errors on the logs, and possibly the main service will restart. This is because we have not configured the required application environment variables yet.
 
