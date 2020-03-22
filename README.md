@@ -5,6 +5,7 @@ Azure IoT Hub is a managed service that acts as a central message hub for bi-dir
 ## 1. Create and configure an Azure IoT Hub
 
 **Before you begin**
+
 Before you begin, you will need to create an Azure account. You can set up a free trial or pay as you go account [here](https://azure.microsoft.com/en-us/free/).
 
 There are many options for setting up an Azure IoT Hub, especially when it comes to device provisioning which can get quite complex. In this example, we will use a simple auto generated key to authorize our device.
@@ -52,7 +53,9 @@ To do so, you have two alternatives:
 Either way, once you add the environment variable, the main service will restart. Once it's started up again, it will start pushing telemetry data to the Azure IoT Hub you created.
 
 **Hardware Note**
+
 This example is designed to run on a Raspberry Pi with an I2C BME680 sensor connected. If no sensor is present on your device, set the balena environment variable `AZ_USE_RANDOM` to true to send random data instead.
 
 **Verifying the data**
+
 To read back the data in real time from the hub see: https://docs.microsoft.com/en-us/azure/iot-hub/quickstart-send-telemetry-python#read-the-telemetry-from-your-hub
