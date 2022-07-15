@@ -2,6 +2,9 @@
 
 Azure IoT Hub is a managed service that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can read more about it [here](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub). To integrate IoT Hub with the [balena platform](https://www.balena.io/what-is-balena/), follow the steps below.
 
+__Note:__ To automate device provisioning with Azure Functions, also see balena's [Provision with cloud IoT](https://www.balena.io/docs/learn/develop/cloud-iot-provisioning/azure/) documentation and [azure-iot-provision](https://github.com/balena-io-examples/azure-iot-provision) repo.
+
+
 ## 1. Create and configure an Azure IoT Hub
 
 ### Before you begin
